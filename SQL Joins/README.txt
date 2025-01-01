@@ -3,6 +3,22 @@
 In this project, I demonstrate how different types of SQL joins—such as INNER, LEFT, RIGHT, and UNION ALL—can be used to merge datasets and extract meaningful insights. The focus is on linking mobile product data with their specifications to analyze relationships between them.
 
 Database Structure
+
+-- Create 'product' table
+CREATE TABLE product (
+    product_id INT,
+    product_name CHAR(40),
+    price FLOAT,
+    brand VARCHAR(20)
+);
+
+-- Create 'spacifications' table
+CREATE TABLE spacifications (
+    ID INT,
+    RAM VARCHAR(20),
+    ROM VARCHAR(20)
+);
+
 product Table:
 Contains details about mobile products, including product_id, product_name, price, and brand.
 spacifications Table:
@@ -18,6 +34,8 @@ Understand and apply different join types in SQL for data integration and analys
 
 Combines rows from both tables where there’s a matching product_id, ensuring only products with specifications are returned.
 
+Result: Returns records where there is a match in both tables on product_id.
+
 2️⃣ LEFT JOIN
 
 Includes all records from the product table, even if there are no matching specifications in the spacifications table, displaying unmatched rows as NULL.
@@ -28,7 +46,7 @@ Includes all records from the spacifications table, even if there are no matchin
 
 4️⃣ UNION ALL with LEFT and RIGHT JOINS
 
-Combines the results of both LEFT and RIGHT JOINs to capture all possible records from both tables.
+Returns all records from both tables, ensuring all possible matches and non-matches are included.
 
 📊 Insights Gained
 
