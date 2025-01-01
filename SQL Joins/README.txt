@@ -1,4 +1,4 @@
-#🌟 Exploring Advanced SQL Joins: A Mobile Product and Specification Case Study! 🌟
+🌟 Exploring Advanced SQLJoins: A Mobile Product and Specification Case Study! 🌟
 ✨ Project Overview
 In this project, I demonstrate how different types of SQL joins—such as INNER, LEFT, RIGHT, and UNION ALL—can be used to merge datasets and extract meaningful insights. The focus is on linking mobile product data with their specifications to analyze relationships between them.
 
