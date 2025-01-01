@@ -32,21 +32,27 @@ Understand and apply different join types in SQL for data integration and analys
 
 1️⃣ INNER JOIN
 
-Combines rows from both tables where there’s a matching product_id, ensuring only products with specifications are returned.
+The query demonstrates how to retrieve matching records from both product and spacifications tables.
 
-Result: Returns records where there is a match in both tables on product_id.
+-Combines rows from both tables where there’s a matching product_id, ensuring only products with specifications are returned.
 
 2️⃣ LEFT JOIN
 
-Includes all records from the product table, even if there are no matching specifications in the spacifications table, displaying unmatched rows as NULL.
+The query retrieves all records from the product table, including unmatched rows, and matching rows from spacifications.
+
+-Includes all records from the product table, even if there are no matching specifications in the spacifications table, displaying unmatched rows as NULL.
 
 3️⃣ RIGHT JOIN
 
-Includes all records from the spacifications table, even if there are no matching products in the product table, displaying unmatched rows as NULL.
+The query retrieves all records from the spacifications table, including unmatched rows, and matching rows from product.
+
+-Includes all records from the spacifications table, even if there are no matching products in the product table, displaying unmatched rows as NULL.
 
 4️⃣ UNION ALL with LEFT and RIGHT JOINS
 
-Returns all records from both tables, ensuring all possible matches and non-matches are included.
+This query combines the results from both LEFT JOIN and RIGHT JOIN to get a complete view of all matched and unmatched records from both tables.
+
+-Returns all records from both tables, ensuring all possible matches and non-matches are included.
 
 📊 Insights Gained
 
