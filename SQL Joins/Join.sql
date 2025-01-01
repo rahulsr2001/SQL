@@ -179,19 +179,26 @@ insert into spacifications values
     (72, '8GB' , '128GB'),
     (73, '32GB' ,'256GB');
     select * from spacifications;
-    
+
+-- Inner join    
+
 select product.product_id,product.product_name,spacifications.RAM,spacifications.ROM
 from product join spacifications 
 on product.product_id=spacifications.ID;
+
+-- Left join 
 
 select product.product_id,product.product_name,spacifications.RAM,spacifications.ROM
 from product left join spacifications 
 on product.product_id=spacifications.ID;
 
+-- Right join
+
 select product.product_id,product.product_name,spacifications.RAM,spacifications.ROM
 from product right join spacifications 
 on product.product_id=spacifications.ID;
 
+-- Full join
 
 select product.product_id,product.product_name,spacifications.RAM,spacifications.ROM
 from product left join spacifications 
